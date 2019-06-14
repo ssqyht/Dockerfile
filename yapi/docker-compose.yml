@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  yapi:
+    image: yuanhaitao/yapi:1.7.0
+    environment:
+      SERVER_PORT: 3000
+      ADMIN_ACCOUNT: 317075064@qq.com
+      MONGO_URL: 127.0.0.1
+      MONGO_DATABASE: yapi
+      MONGO_PORT: 27017
+      MONGO_USER: yapi
+      MONGO_PASS: yapi
+    ports:
+      - 3000:3000
